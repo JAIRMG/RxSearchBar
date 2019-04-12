@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AE63A66BB9BE7B134C964CC /* Pods_RxSearchBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC7F7C2385E4FA9E089F5E /* Pods_RxSearchBar.framework */; };
 		DE990915225FDB0400D09891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE990914225FDB0400D09891 /* AppDelegate.swift */; };
 		DE990917225FDB0400D09891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE990916225FDB0400D09891 /* ViewController.swift */; };
 		DE99091A225FDB0400D09891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE990918225FDB0400D09891 /* Main.storyboard */; };
 		DE99091C225FDB0600D09891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99091B225FDB0600D09891 /* Assets.xcassets */; };
 		DE99091F225FDB0600D09891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99091D225FDB0600D09891 /* LaunchScreen.storyboard */; };
+		DE990929225FE8C100D09891 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE990928225FE8C100D09891 /* Repo.swift */; };
+		DE99092B225FEB8A00D09891 /* ApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99092A225FEB8A00D09891 /* ApiController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2DC7F7C2385E4FA9E089F5E /* Pods_RxSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6079EDA7F1B00ACD84DB02D /* Pods-RxSearchBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSearchBar.release.xcconfig"; path = "Target Support Files/Pods-RxSearchBar/Pods-RxSearchBar.release.xcconfig"; sourceTree = "<group>"; };
 		DE990911225FDB0400D09891 /* RxSearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE990914225FDB0400D09891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE990916225FDB0400D09891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		DE99091B225FDB0600D09891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99091E225FDB0600D09891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE990920225FDB0600D09891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE990928225FE8C100D09891 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		DE99092A225FEB8A00D09891 /* ApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiController.swift; sourceTree = "<group>"; };
+		FD87F7D10576B38115EE5AB4 /* Pods-RxSearchBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSearchBar.debug.xcconfig"; path = "Target Support Files/Pods-RxSearchBar/Pods-RxSearchBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE63A66BB9BE7B134C964CC /* Pods_RxSearchBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C86EB6E3B733607C0E396A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC7F7C2385E4FA9E089F5E /* Pods_RxSearchBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE990908225FDB0400D09891 = {
 			isa = PBXGroup;
 			children = (
 				DE990913225FDB0400D09891 /* RxSearchBar */,
 				DE990912225FDB0400D09891 /* Products */,
+				F4F3604950CD7F44B6E69C9B /* Pods */,
+				6C86EB6E3B733607C0E396A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,33 @@
 		DE990913225FDB0400D09891 /* RxSearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				DE990927225FE04F00D09891 /* Model */,
 				DE990914225FDB0400D09891 /* AppDelegate.swift */,
 				DE990916225FDB0400D09891 /* ViewController.swift */,
 				DE990918225FDB0400D09891 /* Main.storyboard */,
 				DE99091B225FDB0600D09891 /* Assets.xcassets */,
 				DE99091D225FDB0600D09891 /* LaunchScreen.storyboard */,
 				DE990920225FDB0600D09891 /* Info.plist */,
+				DE99092A225FEB8A00D09891 /* ApiController.swift */,
 			);
 			path = RxSearchBar;
+			sourceTree = "<group>";
+		};
+		DE990927225FE04F00D09891 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE990928225FE8C100D09891 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4F3604950CD7F44B6E69C9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD87F7D10576B38115EE5AB4 /* Pods-RxSearchBar.debug.xcconfig */,
+				D6079EDA7F1B00ACD84DB02D /* Pods-RxSearchBar.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE990923225FDB0600D09891 /* Build configuration list for PBXNativeTarget "RxSearchBar" */;
 			buildPhases = (
+				3A07ED228D299892E470D386 /* [CP] Check Pods Manifest.lock */,
 				DE99090D225FDB0400D09891 /* Sources */,
 				DE99090E225FDB0400D09891 /* Frameworks */,
 				DE99090F225FDB0400D09891 /* Resources */,
+				6F09B302BD12C6F33DF5AFBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +170,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A07ED228D299892E470D386 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSearchBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F09B302BD12C6F33DF5AFBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSearchBar/Pods-RxSearchBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSearchBar/Pods-RxSearchBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE99090D225FDB0400D09891 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE99092B225FEB8A00D09891 /* ApiController.swift in Sources */,
+				DE990929225FE8C100D09891 /* Repo.swift in Sources */,
 				DE990917225FDB0400D09891 /* ViewController.swift in Sources */,
 				DE990915225FDB0400D09891 /* AppDelegate.swift in Sources */,
 			);
@@ -280,9 +371,11 @@
 		};
 		DE990924225FDB0600D09891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD87F7D10576B38115EE5AB4 /* Pods-RxSearchBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = RxSearchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +390,11 @@
 		};
 		DE990925225FDB0600D09891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6079EDA7F1B00ACD84DB02D /* Pods-RxSearchBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = RxSearchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
